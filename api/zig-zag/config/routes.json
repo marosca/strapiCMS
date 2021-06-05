@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/zig-zags",
+      "handler": "zig-zag.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zig-zags/count",
+      "handler": "zig-zag.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zig-zags/:id",
+      "handler": "zig-zag.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/zig-zags",
+      "handler": "zig-zag.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/zig-zags/:id",
+      "handler": "zig-zag.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/zig-zags/:id",
+      "handler": "zig-zag.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
