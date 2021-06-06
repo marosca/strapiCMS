@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: strapi
+  name: mongo
+  namespace: ns-strapi
+spec:
+  type: LoadBalancer
+  ports:
+  - name: mongo
+    port: 30144
+    protocol: TCP
+    targetPort: 27017
+  selector:
+    app: strapi-mongo
